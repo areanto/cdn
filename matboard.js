@@ -32,9 +32,7 @@ var seq2 = 0,
     delays2 = 80,
     durations2 = 500;
 
-if ($('.navbar-color-on-scroll').length != 0) {
-    $('.main-panel').on('scroll', md.checkScrollForTransparentNavbar);
-}
+
 
 $(document).ready(function() {
 
@@ -59,6 +57,10 @@ $(document).ready(function() {
     if ($(".selectpicker").length != 0) {
         $(".selectpicker").selectpicker();
     }
+    
+    if ($('.navbar-color-on-scroll').length != 0) {
+    $('.main-panel').on('scroll', md.checkScrollForTransparentNavbar);
+}
 
     //  Activate the tooltips
     $('[rel="tooltip"]').tooltip();
