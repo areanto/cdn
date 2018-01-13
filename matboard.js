@@ -126,9 +126,6 @@ $(document).on('click', '.navbar-toggle', function() {
     $toggle = $(this);
 
     if (mobile_menu_visible == 1) {
-        $('html').removeClass('nav-open');
-
-        $('nav').removeClass('navbar-transparent');
         $('nav').addClass('navbar-white');
         
         $('.close-layer').remove();
@@ -156,7 +153,6 @@ $(document).on('click', '.navbar-toggle', function() {
         }, 100);
 
         $layer.click(function() {
-            $('html').removeClass('nav-open');
 
             $('nav').addClass('navbar-white');
             $('nav').removeClass('navbar-transparent');
@@ -170,9 +166,6 @@ $(document).on('click', '.navbar-toggle', function() {
 
             }, 400);
         });
-
-        $('html').addClass('nav-open');
-        $('html').addClass('navbar-transparent');
         $('nav').removeClass('navbar-white');
         mobile_menu_visible = 1;
 
