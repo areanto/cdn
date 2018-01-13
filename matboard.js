@@ -172,7 +172,7 @@ $(document).on('click', '.navbar-toggle', function() {
         });
 
         $('html').addClass('nav-open');
-        $('nav').addClass('navbar-transparent');
+        $('html').addClass('navbar-transparent');
         $('nav').removeClass('navbar-white');
         mobile_menu_visible = 1;
 
