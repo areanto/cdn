@@ -249,19 +249,9 @@ md = {
         });
     },
 
-    checkScrollForTransparentNavbar: debounce(function () {
-        if ($(document).scrollTop() > 260) {
-            if (transparent) {
-                transparent = false;
-                $('.navbar-color-on-scroll').removeClass('navbar-transparent');
-            }
-        } else {
-            if (!transparent) {
-                transparent = true;
-                $('.navbar-color-on-scroll').addClass('navbar-transparent');
-            }
-        }
-    }, 17),
+    if($('.navbar-color-on-scroll').length != 0){
+        $('.main-panel').on('scroll', md.checkScrollForTransparentNavbar);
+    },
 
 
     initRightMenu: debounce(function () {
